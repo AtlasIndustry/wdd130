@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding-top: 50px; /* Add padding equal to the height of the fixed header */
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+    z-index: 1000; /* ensure header stays on top */
+    padding: 10px 20px; /* adjust padding as needed */
+    max-height: 100px;
+}
+
+#hero {
+    height: 100vh; /* make hero section fill entire viewport height */
+    background-image: url('images/hero-image.jpg'); /* set background image */
+    background-size: cover; /* cover entire area */
+    background-position: center; /* center the image */
+    position: relative;
+    z-index: -1; /* ensure hero section is behind header */
+}
+
+main.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+}
+
+main.home-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.msg {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
