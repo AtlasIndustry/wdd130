@@ -1,33 +1,71 @@
 body {
     margin: 0;
-    padding-top: 50px; /* Add padding equal to the height of the fixed header */
+    padding-top: 50px;
 }
-
 
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
-    z-index: 1000; /* ensure header stays on top */
-    padding: 10px 20px; /* adjust padding as needed */
+    background-color: white; 
+    z-index: 1000; 
+    padding-bottom: 20px; 
     max-height: 100px;
+    display: grid;
+    grid-template-columns: 100px auto;
 }
 
+.logo {
+    text-align: center;
+    border-radius: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    height: 50%; /* Set the height of the nav container */
+    position: relative; /* Position nav relatively */
+}
+
+nav a {
+    padding: 25px 120px; /* Adjust padding for horizontal space between links */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set link color */
+    position: relative; /* Required for absolute positioning of the hover box */
+}
+
+nav a:hover::after {
+    content: ''; /* Add an empty content */
+    position: absolute; /* Position the box absolutely */
+    left: 0; /* Adjust according to your design */
+    right: 0; /* Adjust according to your design */
+    bottom: 0; /* Adjust according to your design */
+    top: 0; /* Adjust according to your design */
+    border: 1px solid gray; /* Add border style */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+
+
+
+
 #hero {
-    height: 100vh; /* make hero section fill entire viewport height */
-    background-image: url('images/hero-image.jpg'); /* set background image */
-    background-size: cover; /* cover entire area */
-    background-position: center; /* center the image */
+    height: 100%; 
+    background-image: url('images/hero-image.jpg'); 
+    background-size: cover; 
+    background-position: center; 
     position: relative;
-    z-index: -1; /* ensure hero section is behind header */
+    z-index: -1; 
 }
 
 main.home-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
 
 }
 
@@ -43,10 +81,13 @@ section.msg {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    
 }
 
 .social img {
@@ -55,3 +96,28 @@ footer {
     margin-right: 10px;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.textbox {
+    position: absolute;
+    top: 92%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+}
