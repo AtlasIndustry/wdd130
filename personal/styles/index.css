@@ -24,30 +24,30 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     padding: 20px;
     margin-top: 3px;
     margin-bottom: 10px;
-    height: 50%; /* Set the height of the nav container */
-    position: relative; /* Position nav relatively */
+    height: 50%; 
+    position: relative; 
 }
 
 nav a {
-    padding: 25px 120px; /* Adjust padding for horizontal space between links */
-    text-decoration: none; /* Remove underline */
-    color: black; /* Set link color */
-    position: relative; /* Required for absolute positioning of the hover box */
+    padding: 25px 120px; 
+    text-decoration: none; 
+    color: black; 
+    position: relative; 
 }
 
 nav a:hover::after {
-    content: ''; /* Add an empty content */
-    position: absolute; /* Position the box absolutely */
-    left: 0; /* Adjust according to your design */
-    right: 0; /* Adjust according to your design */
-    bottom: 0; /* Adjust according to your design */
-    top: 0; /* Adjust according to your design */
-    border: 1px solid gray; /* Add border style */
-    border-radius: 5px; /* Add border radius for rounded corners */
+    content: ''; 
+    position: absolute; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    top: 0;
+    border: 1px solid gray; 
+    border-radius: 5px; 
 }
 
 
