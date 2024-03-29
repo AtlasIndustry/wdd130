@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Universe</title>
-    <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Quantum Universe</h1>
-    </header>
-    <div class="container">
-        <section id="particles">
-            <div class="particle" style="--size: 20px; --delay: 1s;"></div>
-            <div class="particle" style="--size: 15px; --delay: 2s;"></div>
-            <div class="particle" style="--size: 25px; --delay: 3s;"></div>
-            <div class="particle" style="--size: 18px; --delay: 4s;"></div>
-            <div class="particle" style="--size: 22px; --delay: 5s;"></div>
-        </section>
-        <section id="info">
-            <h2>Explore the Quantum Universe</h2>
-            <p>Enter the quantum realm and witness the mysterious behavior of particles.</p>
-            <button id="toggleAnimation">Toggle Animation</button>
-        </section>
-    </div>
 
-    <script src="script.js"></script>
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="images/IMG_1610.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Whats good</div>
+  </div>
+</div>
+
 </body>
 </html>
