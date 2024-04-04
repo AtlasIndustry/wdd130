@@ -108,8 +108,8 @@ footer {
 .product {
     width: 100%; 
     margin-bottom: 20px;
-    padding-right: 200px;
-    padding-left: 100px;
+    padding-right: 100px;
+    padding-left: 50px;
 }
 
 .details {
@@ -122,8 +122,8 @@ footer {
 }
 
 .image img {
-    max-width: 400px;
-    max-height: 260px;
+    max-width: 300px;
+    max-height: 160px;
 }
 
 .title {
