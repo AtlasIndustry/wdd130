@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding-top: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -61,6 +63,8 @@ nav a:hover::after {
     background-position: center; 
     position: relative;
     z-index: -1; 
+    justify-content: center;
+    align-items: center;
 }
 
 main.home-grid {
@@ -70,9 +74,11 @@ main.home-grid {
 }
 
 main.home-grid img {
-    width: 100%;
+    max-width: 900px;
     height: auto;
     display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 section.msg {
@@ -99,12 +105,16 @@ footer {
 .image-container {
     position: relative;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container img {
     display: block;
     width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .textbox {
